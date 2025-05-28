@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;  
+}
+/* Navbar container */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* Centers the navbar items */
+  gap: 100px;
+  padding: 20px 0;
+  background-color: #fff;
+  position: relative;  /* This allows absolute positioning inside the navbar */
+}
+
+/* Navbar links */
+.navbar a {
+  text-decoration: none;
+  color: lightcoral;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 100px;
+}
+
+.navbar a:hover {
+  color: lightcoral;
+}
+.sitename {
+  font-style: italic;
+  font-size: 1.8rem;
+  color: lightcoral;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-left: 60px;
+}
+.site-com {
+  font-size: 1rem; 
+  font-weight: normal;
+}
+
+.intro { 
+    font-size: medium;
+    color: lightcoral;
+    font-style: italic;
+    text-align: center;
+}
+.hero {
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+  background-image: url('../images/home.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-attachment: scroll;
+}
+
+.navbar {
+  width: 100%;               
+  display: flex;
+  justify-content: center;  
+  gap: 100px;
+  padding: 20px 0;   
+  background-color: #fff;
+  }
+
+
+  .navbar a {
+    text-decoration: none;
+    color:lightcoral;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 100px;
+  }
+  
+  .navbar a:hover {
+    color: lightcoral;
+  }
+.destinations {
+  padding: 40px;
+  text-align: center;
+  color: lightcoral;
+}
+
+.destination-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.destination-card {
+  width: 22%;
+  text-decoration: none;
+  color: lightcoral;
+  transition: transform 0.3s ease;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.destination-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.destination-card h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: lightcoral;
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+}
+
+ .destination-info {
+  display: none;
+  color: lightcoral;
+}
+ html {
+    scroll-behavior: smooth;
+  }
+  .footer {
+    text-align: center;
+    color:lightcoral;
+    padding: 20px;
+    font-size: 1rem;
+    position: relative; 
+    width: 100%;
+    font-weight: bold;
+  }
+
+
+@media (max-width: 768px) {
+  /* Hero image adjustments */
+  .hero {
+    height: 200px;
+    background-size: cover;
+  }
+
+  /* Navbar adjustments */
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 0;
+    justify-content: center; 
+    align-items: center;   
+  }
+
+  .navbar a {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  /* Destinations section */
+  .destinations {
+    padding: 20px;
+  }
+
+  .destination-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destination-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .destination-card h3 {
+    font-size: 1rem;
+  }
+}
