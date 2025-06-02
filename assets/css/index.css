@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif; 
+  font-family: Arial, sans-serif;
+  color: lightcoral;
 }
 /* Navbar container */
 .navbar {
@@ -98,12 +99,14 @@ body {
   padding: 0;
   cursor: pointer;
 }
-
 .destination-card img {
   width: 100%;
-  height: auto;
+  height: 150px;          
+  object-fit: cover;     
   border-radius: 10px;
 }
+
+
 
 .destination-card h3 {
   margin-top: 10px;
@@ -125,7 +128,7 @@ body {
   .footer {
     text-align: center;
     color:lightcoral;
-    padding: 20px;
+    padding: 20px 0;
     font-size: 1rem;
     position: relative; 
     width: 100%;
@@ -292,3 +295,88 @@ body {
 
   
 }
+
+
+/* === plan your trip === */
+/* === Header styles === */
+header {
+  background-color: #ffe6e6;
+  padding: 40px 30px 20px;
+  border-bottom: 1px solid lightcoral;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #c06060;
+}
+
+/* === Main content wrapper with image === */
+.content-wrapper {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 50px; 
+  gap: 100px; 
+}
+
+/* === Main content sections === */
+.main-content {
+  flex: 1;
+}
+
+.main-content section {
+  margin-bottom: 40px;
+}
+
+/* === Section headers === */
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #cc4e4e;
+}
+
+/* === Lists === */
+ul {
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+/* === Paragraphs === */
+p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #a64848;
+}
+
+/* === Links === */
+a {
+  color: lightcoral;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* === Side image on the right === */
+.side-image {
+  width: 500px;
+  margin-left: auto;
+  background-image: url('https://images.pexels.com/photos/6034148/pexels-photo-6034148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+/* === Responsive adjustments === */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+

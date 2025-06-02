@@ -13,97 +13,340 @@
     <div>
       <a href="index.html">Home</a>
       <a href="quiz.html">Quiz</a>
-      <a href="#">Plan Your Trip</a>
+      <a href="planyourtrip.html">Plan Your Trip</a>
     </div>
 </nav>
     <div Class="hero"> </div>
   <div class="intro">
     <h1> Find Your Perfect Gateway, Made By Women, For Women</h1>
   </div>
-
 <section class="destinations">
-    <h2>Explore Destinations Loved by Women</h2>
-    <div class="destination-grid">
-        <button class="destination-card" onclick="showDestinationInfo('paris')">
-            <img src="/assets/images/paris.webp" alt="Paris">
-            <h3>Paris</h3>
-        </button>
-        <button class="destination-card" onclick="showDestinationInfo('bali')">
-            <img src="/assets/images/bali.jpeg" alt="Bali">
-            <h3>Bali</h3>
-        </button>
-        <button class="destination-card" onclick="showDestinationInfo('tokyo')">
-            <img src="/assets/images/tokyo.jpeg" alt="Tokyo">
-            <h3>Tokyo</h3>
-        </button>
-        <button class="destination-card" onclick="showDestinationInfo('cape-town')">
-            <img src="/assets/images/africa.webp" alt="Cape Town">
-            <h3>Cape Town</h3>
-        </button>
-    </div>
+  <h2>Explore Destinations Loved by Women</h2>
+  <div class="destination-grid">
+    <!-- Existing 4 -->
+    <button class="destination-card" data-destination="paris">
+      <img src="assets/images/paris.webp" alt="Paris" />
+      <h3>Paris</h3>
+    </button>
+    <button class="destination-card" data-destination="bali">
+      <img src="assets/images/bali.jpeg" alt="Bali" />
+      <h3>Bali</h3>
+    </button>
+    <button class="destination-card" data-destination="tokyo">
+      <img src="assets/images/tokyo.jpeg" alt="Tokyo" />
+      <h3>Tokyo</h3>
+    </button>
+    <button class="destination-card" data-destination="cape-town">
+      <img src="assets/images/africa.webp" alt="Cape Town" />
+      <h3>Cape Town</h3>
+    </button>
+
+    <!-- New 12 destinations -->
+    <button class="destination-card" data-destination="berlin">
+      <img src="assets/images/berlin.jpeg" alt="Berlin" />
+      <h3>Berlin</h3>
+    </button>
+    <button class="destination-card" data-destination="rome">
+      <img src="assets/images/rome.jpeg" alt="Rome" />
+      <h3>Rome</h3>
+    </button>
+    <button class="destination-card" data-destination="madrid">
+      <img src="assets/images/madrid.jpeg" alt="Madrid" />
+      <h3>Madrid</h3>
+    </button>
+    <button class="destination-card" data-destination="dublin">
+      <img src="assets/images/dublin.jpeg" alt="Dublin" />
+      <h3>Dublin</h3>
+    </button>
+    <button class="destination-card" data-destination="london">
+      <img src="assets/images/london.jpeg" alt="London" />
+      <h3>London</h3>
+    </button>
+    <button class="destination-card" data-destination="sydney">
+      <img src="assets/images/sydney.jpeg" alt="Sydney" />
+      <h3>Sydney</h3>
+    </button>
+    <button class="destination-card" data-destination="seoul">
+      <img src="assets/images/seoul.jpeg" alt="Seoul" />
+      <h3>Seoul</h3>
+    </button>
+    <button class="destination-card" data-destination="beijing">
+      <img src="assets/images/beijing.webp" alt="Beijing" />
+      <h3>Beijing</h3>
+    </button>
+    <button class="destination-card" data-destination="bangkok">
+      <img src="assets/images/bangkok.webp" alt="Bangkok" />
+      <h3>Bangkok</h3>
+    </button>
+    <button class="destination-card" data-destination="maldives">
+      <img src="assets/images/maldives.jpeg" alt="Maldives" />
+      <h3>Maldives</h3>
+    </button>
+    <button class="destination-card" data-destination="havana">
+      <img src="assets/images/havana.jpeg" alt="Havana" />
+      <h3>Havana</h3>
+    </button>
+    <button class="destination-card" data-destination="rio-de-janeiro">
+      <img src="assets/images/rio.webp" alt="Rio de Janeiro" />
+      <h3>Rio de Janeiro</h3>
+    </button>
+  </div>
 </section>
 
-<section id="paris" class="destination-info">
-    <h2>Why Women Love Paris</h2>
-    <p>Paris is loved for its charming streets, art, and safe atmosphere for solo female travelers.</p>
-    <h3>Suggested Restaurants</h3>
-    <ul>
-        <li>Le Bouillon Chartier</li>
-        <li>Café de Flore</li>
-    </ul>
-    <h3>Famous Attractions</h3>
-    <ul>
-        <li>Eiffel Tower</li>
-        <li>Louvre Museum</li>
-        <li>Montmartre</li>
-    </ul>
-</section>
-<section id="bali" class="destination-info">
-    <h2>Why Women Love Bali</h2>
-    <p>Bali is a tropical paradise known for its beautiful beaches, spiritual retreats, and vibrant culture, offering the perfect blend of relaxation and adventure.</p>
-    <h3>Suggested Restaurants</h3>
-    <ul>
-        <li>Locavore</li>
-        <li>Mozaic Restaurant</li>
-    </ul>
-    <h3>Famous Attractions</h3>
-    <ul>
-        <li>Uluwatu Temple</li>
-        <li>Sacred Monkey Forest Sanctuary</li>
-        <li>Mount Batur</li>
-    </ul>
+<!-- Destination info sections -->
+    <section id="paris" class="destination-info" style="display:none;">
+        <h2>Why Women Love Paris</h2>
+        <p>Paris is loved for its charming streets, art, and safe atmosphere for solo female travelers.</p>
+        <h3>Suggested Restaurants</h3>
+        <ul>
+            <li>Le Bouillon Chartier</li>
+            <li>Café de Flore</li>
+        </ul>
+        <h3>Famous Attractions</h3>
+        <ul>
+            <li>Eiffel Tower</li>
+            <li>Louvre Museum</li>
+            <li>Montmartre</li>
+        </ul>
+    </section>
+
+    <section id="bali" class="destination-info" style="display:none;">
+        <h2>Why Women Love Bali</h2>
+        <p>Bali is a tropical paradise known for its beautiful beaches, spiritual retreats, and vibrant culture, offering the perfect blend of relaxation and adventure.</p>
+        <h3>Suggested Restaurants</h3>
+        <ul>
+            <li>Locavore</li>
+            <li>Mozaic Restaurant</li>
+        </ul>
+        <h3>Famous Attractions</h3>
+        <ul>
+            <li>Uluwatu Temple</li>
+            <li>Sacred Monkey Forest Sanctuary</li>
+            <li>Mount Batur</li>
+        </ul>
+    </section>
+
+    <section id="tokyo" class="destination-info" style="display:none;">
+        <h2>Why Women Love Tokyo</h2>
+        <p>Tokyo is a bustling metropolis with a unique blend of traditional culture and cutting-edge technology, offering a wide variety of experiences for female travelers.</p>
+        <h3>Suggested Restaurants</h3>
+        <ul>
+            <li>Sukiyabashi Jiro</li>
+            <li>Ippudo Ramen</li>
+        </ul>
+        <h3>Famous Attractions</h3>
+        <ul>
+            <li>Tokyo Tower</li>
+            <li>Senso-ji Temple</li>
+            <li>Shibuya Crossing</li>
+        </ul>
+    </section>
+
+    <section id="cape-town" class="destination-info" style="display:none;">
+        <h2>Why Women Love Cape Town</h2>
+        <p>Cape Town is known for its dramatic scenery, rich history, and the welcoming atmosphere, making it an ideal destination for women seeking adventure and culture.</p>
+        <h3>Suggested Restaurants</h3>
+        <ul>
+            <li>The Test Kitchen</li>
+            <li>La Colombe</li>
+        </ul>
+        <h3>Famous Attractions</h3>
+        <ul>
+            <li>Table Mountain</li>
+            <li>Robben Island</li>
+            <li>Cape of Good Hope</li>
+        </ul>
+    </section>
+    <section id="berlin" class="destination-info" style="display:none;">
+  <h2>Why Women Love Berlin</h2>
+  <p>Berlin is a vibrant city known for its rich history, art scene, and progressive atmosphere, making it welcoming and inspiring for female travelers.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Zur letzten Instanz</li>
+    <li>Katz Orange</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Brandenburg Gate</li>
+    <li>East Side Gallery</li>
+    <li>Museum Island</li>
+  </ul>
 </section>
 
-<section id="tokyo" class="destination-info">
-    <h2>Why Women Love Tokyo</h2>
-    <p>Tokyo is a bustling metropolis with a unique blend of traditional culture and cutting-edge technology, offering a wide variety of experiences for female travelers.</p>
-    <h3>Suggested Restaurants</h3>
-    <ul>
-        <li>Sukiyabashi Jiro</li>
-        <li>Ippudo Ramen</li>
-    </ul>
-    <h3>Famous Attractions</h3>
-    <ul>
-        <li>Tokyo Tower</li>
-        <li>Senso-ji Temple</li>
-        <li>Shibuya Crossing</li>
-    </ul>
+<section id="rome" class="destination-info" style="display:none;">
+  <h2>Why Women Love Rome</h2>
+  <p>Rome captivates visitors with its ancient history, stunning architecture, and lively street culture, perfect for women exploring both culture and cuisine.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Roscioli</li>
+    <li>Pizzarium Bonci</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Colosseum</li>
+    <li>Trevi Fountain</li>
+    <li>Vatican Museums</li>
+  </ul>
 </section>
 
-<section id="cape-town" class="destination-info">
-    <h2>Why Women Love Cape Town</h2>
-    <p>Cape Town is known for its dramatic scenery, rich history, and the welcoming atmosphere, making it an ideal destination for women seeking adventure and culture.</p>
-    <h3>Suggested Restaurants</h3>
-    <ul>
-        <li>The Test Kitchen</li>
-        <li>La Colombe</li>
-    </ul>
-    <h3>Famous Attractions</h3>
-    <ul>
-        <li>Table Mountain</li>
-        <li>Robben Island</li>
-        <li>Cape of Good Hope</li>
-    </ul>
+<section id="madrid" class="destination-info" style="display:none;">
+  <h2>Why Women Love Madrid</h2>
+  <p>Madrid offers a lively cultural scene, friendly locals, and beautiful parks, ideal for women travelers seeking vibrant urban life.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Sobrino de Botín</li>
+    <li>Mercado de San Miguel</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Prado Museum</li>
+    <li>Retiro Park</li>
+    <li>Royal Palace</li>
+  </ul>
+</section>
+
+<section id="dublin" class="destination-info" style="display:none;">
+  <h2>Why Women Love Dublin</h2>
+  <p>Dublin blends historic charm with a welcoming vibe, great pubs, and beautiful parks, making it a cozy destination for solo and group travelers alike.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Chapter One</li>
+    <li>Forest Avenue</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Trinity College & Book of Kells</li>
+    <li>Dublin Castle</li>
+    <li>St. Stephen's Green</li>
+  </ul>
+</section>
+
+<section id="london" class="destination-info" style="display:none;">
+  <h2>Why Women Love London</h2>
+  <p>London offers a cosmopolitan mix of history, fashion, and arts, with safe neighborhoods and diverse activities perfect for women travelers.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Dishoom</li>
+    <li>The Ledbury</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Big Ben & Houses of Parliament</li>
+    <li>London Eye</li>
+    <li>Borough Market</li>
+  </ul>
+</section>
+
+<section id="sydney" class="destination-info" style="display:none;">
+  <h2>Why Women Love Sydney</h2>
+  <p>Sydney combines stunning natural landscapes with a laid-back vibe, great beaches, and a welcoming culture that makes every visit memorable.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Quay Restaurant</li>
+    <li>Icebergs Dining Room</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Sydney Opera House</li>
+    <li>Bondi Beach</li>
+    <li>Royal Botanic Garden</li>
+  </ul>
+</section>
+
+<section id="seoul" class="destination-info" style="display:none;">
+  <h2>Why Women Love Seoul</h2>
+  <p>Seoul is a dynamic city mixing tradition and modernity, with fantastic shopping, skincare culture, and historic palaces.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Jungsik</li>
+    <li>Mingles</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Gyeongbokgung Palace</li>
+    <li>Myeongdong Shopping Street</li>
+    <li>Bukchon Hanok Village</li>
+  </ul>
+</section>
+
+<section id="beijing" class="destination-info" style="display:none;">
+  <h2>Why Women Love Beijing</h2>
+  <p>Beijing blends imperial history with modern energy, featuring iconic landmarks and cultural experiences cherished by travelers worldwide.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Da Dong Roast Duck</li>
+    <li>TRB Hutong</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>The Great Wall</li>
+    <li>Forbidden City</li>
+    <li>Temple of Heaven</li>
+  </ul>
+</section>
+
+<section id="bangkok" class="destination-info" style="display:none;">
+  <h2>Why Women Love Bangkok</h2>
+  <p>Bangkok is vibrant and energetic, with incredible street food, temples, and shopping, perfect for adventurous female travelers.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Gaggan</li>
+    <li>Bo.lan</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Grand Palace</li>
+    <li>Wat Arun</li>
+    <li>Chatuchak Market</li>
+  </ul>
+</section>
+
+<section id="maldives" class="destination-info" style="display:none;">
+  <h2>Why Women Love Maldives</h2>
+  <p>The Maldives is a tropical paradise offering privacy, crystal-clear waters, and luxury resorts perfect for relaxing getaways.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Ithaa Undersea Restaurant</li>
+    <li>5.8 Undersea Restaurant</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Overwater Bungalows</li>
+    <li>Snorkeling and Diving Spots</li>
+    <li>Sunset Cruises</li>
+  </ul>
+</section>
+
+<section id="havana" class="destination-info" style="display:none;">
+  <h2>Why Women Love Havana</h2>
+  <p>Havana enchants with colorful streets, rich culture, and lively music, making it an exciting and vibrant destination for women.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>La Guarida</li>
+    <li>San Cristobal Paladar</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Old Havana</li>
+    <li>Malecón</li>
+    <li>Revolution Museum</li>
+  </ul>
+</section>
+
+<section id="rio-de-janeiro" class="destination-info" style="display:none;">
+  <h2>Why Women Love Rio de Janeiro</h2>
+  <p>Rio dazzles with stunning beaches, lively festivals, and iconic landmarks, creating a joyful and adventurous environment for women travelers.</p>
+  <h3>Suggested Restaurants</h3>
+  <ul>
+    <li>Oro Restaurant</li>
+    <li>Aprazível</li>
+  </ul>
+  <h3>Famous Attractions</h3>
+  <ul>
+    <li>Christ the Redeemer</li>
+    <li>Sugarloaf Mountain</li>
+    <li>Copacabana Beach</li>
+  </ul>
 </section>
  <footer class="footer">
     <p>Created by Nash Sharmilli, 2025</p>   <!-- footer -->
