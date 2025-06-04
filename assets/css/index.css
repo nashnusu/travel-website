@@ -337,7 +337,7 @@ header {
 h2 {
   font-size: 1.6rem;
   margin-bottom: 15px;
-  color: #cc4e4e;
+  color: lightcoral;
 }
 
 /* === Lists === */
@@ -350,7 +350,7 @@ ul {
 p {
   margin: 10px 0;
   font-size: 1rem;
-  color: #a64848;
+  color:lightcoral;
 }
 
 /* === Links === */
