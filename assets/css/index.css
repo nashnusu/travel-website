@@ -302,12 +302,13 @@ body {
 header {
   background-color: #ffe6e6;
   padding: 40px 30px 20px;
-  border-bottom: 1px solid lightcoral;
+  border-bottom: 1px solid#c06060 ;
 }
 
 .header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: lightcoral;
 }
 
 .header p {
@@ -334,10 +335,20 @@ header {
 }
 
 /* === Section headers === */
-h2 {
+.checklist h2 {
   font-size: 1.6rem;
   margin-bottom: 15px;
-  color: lightcoral;
+  color: #c06060;
+}
+.resources h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #c06060;
+}
+.tips h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #c06060;
 }
 
 /* === Lists === */
