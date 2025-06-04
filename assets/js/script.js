@@ -1,4 +1,4 @@
-
+/* jshint esversion: 11 */
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".destination-card");
 

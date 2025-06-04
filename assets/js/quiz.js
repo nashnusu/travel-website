@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 const questions = [
   {
     question: "What kind of weather do you prefer?",
@@ -55,13 +56,13 @@ const destinationBuckets = [
 
 let currentQuestion = 0;
 let totalScore = 0;
-
+// Container element where the quiz will be rendered
 const quizContainer = document.getElementById("quiz-container");
-
+// Function to display the current question and options
 function showQuestion() {
   const q = questions[currentQuestion];
   const progress = ((currentQuestion / questions.length) * 100).toFixed(0);
-
+// Update the quiz container HTML with progress bar, question text, and options buttons
   quizContainer.innerHTML = `
     <div class="progress-bar-container">
       <div class="progress-bar-fill" style="width: ${progress}%"></div>
@@ -86,6 +87,7 @@ function selectOption(points) {
   }
 }
 
+// Function to display the final quiz result based on totalScore
 function showResult() {
   const matched = destinationBuckets.find(bucket =>
     totalScore >= bucket.min && totalScore <= bucket.max
@@ -95,6 +97,7 @@ function showResult() {
     ? matched.destinations[Math.floor(Math.random() * matched.destinations.length)]
     : "Somewhere mysterious... 🤫";
 
+// Display the total score, recommended destination, and a restart button
   quizContainer.innerHTML = `
     <div class="result">
       <p>Your total score: <strong>${totalScore}</strong></p>
