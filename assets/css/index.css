@@ -1,112 +1,99 @@
+/* === Base Styles === */
 body {
   font-family: Arial, sans-serif;
   color: lightcoral;
-}
-/* Navbar container */
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: center;  
-  gap: 100px;
-  padding: 20px 0;
-  background-color: #fff;
-  position: relative;  
+  margin: 0;
+  padding: 0;
 }
 
-/* Navbar links */
-.navbar a {
-  text-decoration: none;
-  color: lightcoral;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0 100px;
+html {
+  scroll-behavior: smooth;
 }
 
-.navbar a:hover {
-  color: lightcoral;
-}
+/* === Site Branding === */
 .sitename {
   font-style: italic;
   font-size: 1.8rem;
   color: lightcoral;
   font-weight: bold;
-  margin-top: 70px;
-  margin-left: 60px;
+  display: inline;       
+  margin: 0;             
+  padding: 0;          
 }
 .site-com {
-  font-size: 1rem; 
+  font-size: 1rem;
   font-weight: normal;
 }
 
-.intro { 
-    font-size: medium;
-    color: lightcoral;
-    font-style: italic;
-    text-align: center;
+
+/* === Navbar === */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px 0;
+  background-color: #fff;
 }
+
+.navbar a {
+  text-decoration: none;
+  color: lightcoral;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: lightcoral;
+}
+
+/* === Hero Section === */
 .hero {
   width: 100%;
   height: 300px;
   margin-top: 100px;
   background-image: url('../images/home.jpg');
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 80% auto;
-  background-attachment: scroll;
 }
 
-.navbar {
-  width: 100%;               
-  display: flex;
-  justify-content: center;  
-  gap: 100px;
-  padding: 20px 0;   
-  background-color: #fff;
-  }
+/* === Intro Section === */
+.intro {
+  text-align: center;
+  font-style: italic;
+  color: lightcoral;
+}
 
-
-  .navbar a {
-    text-decoration: none;
-    color:lightcoral;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0 100px;
-  }
-  
-  .navbar a:hover {
-    color: lightcoral;
-  }
+/* === Destinations Section === */
 .destinations {
   padding: 40px;
   text-align: center;
-  color: lightcoral;
 }
 
 .destination-grid {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .destination-card {
   width: 22%;
-  text-decoration: none;
-  color: lightcoral;
-  transition: transform 0.3s ease;
   border: none;
   background: none;
   padding: 0;
   cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
 }
+
 .destination-card img {
   width: 100%;
-  height: 150px;          
-  object-fit: cover;     
+  height: 150px;
+  object-fit: cover;
   border-radius: 10px;
 }
-
-
 
 .destination-card h3 {
   margin-top: 10px;
@@ -118,38 +105,53 @@ body {
   transform: scale(1.05);
 }
 
- .destination-info {
-  display: none;
+/* === Modal === */
+dialog {
+  max-width: 60vw;
+  color: lightcoral;
+  padding: 3em;
+  border-radius: 1em;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+#close-btn {
+  background-color: lightpink;
+  color: black;
+  padding: 1em;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+#destination-name {
+  text-decoration: underline;
   color: lightcoral;
 }
- html {
-    scroll-behavior: smooth;
-  }
-  .footer {
-    text-align: center;
-    color:lightcoral;
-    padding: 20px 0;
-    font-size: 1rem;
-    position: relative; 
-    width: 100%;
-    font-weight: bold;
-  }
 
+/* === Footer === */
+.footer {
+  text-align: center;
+  color: lightcoral;
+  padding: 20px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+}
 
+/* === Responsive Design === */
 @media (max-width: 768px) {
-  /* Hero image adjustments */
   .hero {
     height: 200px;
     background-size: cover;
   }
 
-  /* Navbar adjustments */
   .navbar {
     flex-direction: column;
     gap: 20px;
-    padding: 15px 0;
-    justify-content: center; 
-    align-items: center;   
+    align-items: center;
   }
 
   .navbar a {
@@ -157,7 +159,6 @@ body {
     font-size: 1rem;
   }
 
-  /* Destinations section */
   .destinations {
     padding: 20px;
   }
@@ -169,13 +170,13 @@ body {
 
   .destination-card {
     width: 80%;
-    margin-bottom: 20px;
   }
 
   .destination-card h3 {
     font-size: 1rem;
   }
 }
+
 
 /* === Quiz Page Layout Wrapper === */
 .quiz-wrapper {
