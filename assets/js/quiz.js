@@ -93,9 +93,9 @@ function showResult() {
     totalScore >= bucket.min && totalScore <= bucket.max
   );
 
-  const destination = matched
-    ? matched.destinations[Math.floor(Math.random() * matched.destinations.length)]
-    : "Somewhere mysterious... 🤫";
+  const destination = matched ?
+  matched.destinations[Math.floor(Math.random() * matched.destinations.length)] :
+  "Somewhere mysterious... 🤫";
 
 // Display the total score, recommended destination, and a restart button
   quizContainer.innerHTML = `
