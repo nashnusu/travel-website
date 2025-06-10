@@ -95,10 +95,11 @@ html {
   border-radius: 10px;
 }
 
-.destination-card h3 {
+.destination-card .destination-name {
   margin-top: 10px;
   font-size: 1.1rem;
   color: lightcoral;
+  font-weight: bold;
 }
 
 .destination-card:hover {
