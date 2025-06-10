@@ -88,7 +88,7 @@ No wireframes were created for this project. Instead, I focused on building a re
 | Target | Expectation | Outcome |
 | --- | --- | --- |
 | As a visitor | I want to quickly get information about locations|so that it might help me in the planning my trip.
-| As a visitor | I want to know about all the famous locations and get basic infomration | so that i know how to navigate in those locations 
+| As a visitor | I want to know about all the famous locations and get basic infomration | so that i know to navigate in those locations 
 | As a user | I would like the website to have high-contrast colors and accessible fonts | so that I can easily read and interact with it. |
 | As a user | I would like clear labels and instructions | so that I understand how to navigate the app without confusion. |
 | As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. |
